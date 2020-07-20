@@ -13,8 +13,8 @@ function sendData() {
     let idealWeight
 
     if (height == "" || age == "") {
-        console.log("ERROR: \n\theight and/or age is missing")
-        document.getElementById("res").innerHTML = "ERROR: height and/or age is missing"
+        console.log("ERROR: \n\theight and/or age missing")
+        document.getElementById("res").innerHTML = "ERROR: height and/or age missing"
     }
     else {
         if (document.getElementById("wide").checked == true) {
