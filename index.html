@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimalgewicht-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Optimalgewicht-Rechner</h1>
+    <form>
+        <div>
+            <h4>Körpergröße</h4>
+            <input type="number" id="height">
+            <label for="height">cm</label>
+        </div>
+        <div>
+            <h4>Alter</h4>
+            <input type="number" id="age">
+            <label for="age">Jahre</label>
+        </div>
+        <div id="radio">
+            <h4>Körperbau</h4>
+            <input type="radio" name="build" id="wide"" onclick=" checkBuild()" checked>
+            <label for="wide">Breite</label>
+            <input type="radio" name="build" id="slim" onclick="checkBuild()">
+            <label for="slim">Schmale</label>
+        </div>
+
+        <input type="button" value="Daten absenden" id="btn" onclick="sendData()">
+
+        <div>
+            <h4>Ausgabe</h4>
+            <p id="res"></p>
+        </div>
+    </form>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
